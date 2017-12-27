@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Justified Nav Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <!-- Custom styles for this template -->
+    <link href="justified-nav.css" rel="stylesheet">
+    <style type="text/css">
+fieldset.date {
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  padding-bottom: .5em;
+  display: block;
+  border: none;
+}
+
+fieldset.date legend {
+  margin: 0;
+  padding: 0;
+  margin-top: .25em;
+  font-size: 100%;
+}
+
+
+fieldset.date label {
+  position: absolute;
+  top: -20em;
+  left: -200em;
+}
+
+fieldset.date select {
+margin: 0;
+padding: 0;
+font-size: 100%;
+display: inline;
+}
+
+span.inst {
+  font-size: 75%;
+  color: blue;
+  padding-left: .25em;
+}
+
+
+fieldset.date select:active,
+fieldset.date select:focus,
+fieldset.date select:hover
+{
+  border-color: gray;
+  background-color: lightyellow;
+}
+
+
+  </style>
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <header class="masthead">
+        <h3 class="text-muted "> <p style="color:gray;text-align:center"> Transways Co. India </p></h3>
+
+        <nav class="navbar navbar-expand-md navbar-light bg-light rounded mb-3">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav text-md-center nav-justified w-100">
+              <li class="nav-item " >
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="maintainance.html">Maintainance</a>
+              </li>
+              <li class="nav-item active" style="background-color:#cbd1d8">
+                <a class="nav-link" href="generateBill.html">Bill Generation</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="search.html">Search</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="trucks.html">Trucks</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown01">
+                    <a class="dropdown-item" href="team.html">Team</a>
+                    <a class="dropdown-item" href="contact.html">Contact Us</a>
+                    <a class="dropdown-item" href="#">Feedback</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <main role="main">
+
+        <!-- Jumbotron -->
+        <div class="jumbotron" style="height:470px">
+            <form>
+  <div class="form-group">
+    <label for="exampleFormControlInput1" style="background-color:#c3cee0;padding: 5px;border-radius:2px">Generate Bill For:</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter Consignee Code Here">
+  </div>
+
+  </br>
+  </br>
+  <div class="form-group">
+
+    <label for="exampleFormControlSelect1" style="background-color:#c3cee0;padding: 5px;border-radius:2px">From</label>
+
+
+    <fieldset class="date">
+
+      <label for="month_start">Month</label>
+      <select id="month_start"
+              name="month_start" />
+        <option>January</option>
+        <option>February</option>
+        <option>March</option>
+        <option>April</option>
+        <option>May</option>
+        <option>June</option>
+        <option>July</option>
+        <option>August</option>
+        <option>September</option>
+        <option>October</option>
+        <option>November</option>
+        <option>December</option>
+      </select> -
+      <label for="day_start">Day</label>
+      <select id="day_start"
+              name="day_start" />
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+        <option>13</option>
+        <option>14</option>
+        <option>15</option>
+        <option>16</option>
+        <option>17</option>
+        <option>18</option>
+        <option>19</option>
+        <option>20</option>
+        <option>21</option>
+        <option>22</option>
+        <option>23</option>
+        <option>24</option>
+        <option>25</option>
+        <option>26</option>
+        <option>27</option>
+        <option>28</option>
+        <option>29</option>
+        <option>30</option>
+        <option>31</option>
+      </select> -
+      <label for="year_start">Year</label>
+      <select id="year_start"
+             name="year_start" />
+        <option>2009</option>
+        <option>2010</option>
+        <option>2011</option>
+        <option>2012</option>
+        <option>2013</option>
+        <option>2014</option>
+        <option>2015</option>
+        <option>2016</option>
+        <option>2017</option>
+        <option>2018</option>
+      </select>
+      <span class="inst">(Month-Day-Year)</span>
+    </fieldset>
+
+</br>
+    <label for="exampleFormControlSelect1" style="background-color:#c3cee0; padding-right:12px;padding-left:12px; border-radius:2px">To</label>
+    <fieldset class="date">
+
+      <label for="month_end">Month</label>
+      <select id="month_end"
+              name="month_end" />
+        <option>January</option>
+        <option>February</option>
+        <option>March</option>
+        <option>April</option>
+        <option>May</option>
+        <option>June</option>
+        <option>July</option>
+        <option>August</option>
+        <option>September</option>
+        <option>October</option>
+        <option>November</option>
+        <option>December</option>
+      </select> -
+      <label for="day_end">Day</label>
+      <select id="day_end"
+              name="day_end" />
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+        <option>13</option>
+        <option>14</option>
+        <option>15</option>
+        <option>16</option>
+        <option>17</option>
+        <option>18</option>
+        <option>19</option>
+        <option>20</option>
+        <option>21</option>
+        <option>22</option>
+        <option>23</option>
+        <option>24</option>
+        <option>25</option>
+        <option>26</option>
+        <option>27</option>
+        <option>28</option>
+        <option>29</option>
+        <option>30</option>
+        <option>31</option>
+      </select> -
+      <label for="year_end">Year</label>
+      <select id="year_end"
+             name="year_end" />
+        <option>2009</option>
+        <option>2010</option>
+        <option>2011</option>
+        <option>2012</option>
+        <option>2013</option>
+        <option>2014</option>
+        <option>2015</option>
+        <option>2016</option>
+        <option>2017</option>
+        <option>2018</option>
+      </select>
+      <span class="inst">(Month-Day-Year)</span>
+    </fieldset>
+  </div>
+
+
+</form>
+
+<button class="btn btn-primary" style="padding:1%;margin-left:20%;margin-right:30%;width:50%;min-width:200px">Submit </button>
+        </div>
+
+        <!-- Example row of columns
+        <div class="row">
+          <div class="col-lg-4">
+            <h2>Heading</h2>
+            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+          </div>
+          <div class="col-lg-4">
+            <h2>Heading</h2>
+            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+          </div>
+          <div class="col-lg-4">
+            <h2>Heading</h2>
+            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
+            <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+          </div>
+        </div>
+        -->
+
+      </main>
+
+      <!-- Site footer -->
+      <footer class="footer">
+        <p>&copy; TransWays Co. India 2017</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../../../dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
